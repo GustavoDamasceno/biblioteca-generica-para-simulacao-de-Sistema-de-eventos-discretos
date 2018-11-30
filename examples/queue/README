@@ -1,0 +1,59 @@
+EXEMPLO DE FILA
+
+Este exemplo modela uma fila M / M / 1 simples. Este é apenas um exemplo de
+como é possível usar as classes básicas fornecidas pelo MetaSim para
+modelagem de uma simulação de eventos discretos.
+
+ARQUIVOS
+
+queue.hpp definição das principais classes
+queue.cpp o arquivo de exemplo
+makefile
+
+COMPILANDO
+
+Depois de compilar a biblioteca metasim, digite o diretório de exemplo / fila
+e simplesmente digite make. Um arquivo executável (fila no Linux e
+queue.exe sob cygwin) será produzido.
+
+CORRIDA
+
+O programa perguntará por dois parâmetros: lambda (o serviço avg
+tempo) e mu (o tempo médio entre chegadas). Lembre-se que em uma fila M / M / 1
+os tempos de serviço e os interarrivals são exponencialmente
+distribuído.
+
+O programa executa 20 execuções de simulação e calcula a fila média
+comprimento e intervalo de confiança de 98%.
+
+If you insert:
+
+lambda = 4
+mu = 8
+
+the result should be:
+
+>  The average length is 1.01568
+>  with a 98% confidence interval of 0.0363476 
+
+Recall the the formula for the average queue lenght is
+
+	avg = rho / (1 - rho)
+
+where 
+
+	rho = lambda / mu
+
+In this example, 20 simulation runs are done and every simulation run
+lasts for 50000 ticks: the results of the first 10000 ticks are not
+considered for computing the mean. If you want more accurate
+results, you must make longer simulations, or more simulation runs.
+
+
+
+
+
+
+
+
+

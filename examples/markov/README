@@ -1,0 +1,34 @@
+EXEMPLO MARKOV
+
+Este exemplo modela uma cadeia de markov simples. Este é apenas um exemplo de
+como é possível usar as classes básicas fornecidas pelo MetaSim para
+modelagem de uma simulação de eventos discretos.
+
+ARQUIVOS
+
+definição de markov.hpp das classes principais
+markov.cpp o arquivo de exemplo
+makefile
+
+COMPILANDO
+
+Depois de compilar a biblioteca metasim, digite o diretório example / markov
+e simplesmente digite make. Um arquivo executável (markov no Linux e
+markov.exe sob cygwin) será produzido.
+
+CORRIDA
+
+O programa simulará uma cadeia de markov composta por três estados. o
+a probabilidade de mudança de estado segue uma distribuição exponencial.
+
+O programa executa 29 execuções de simulação e calcula o intervalo médio
+do tempo gasto no estado 2 e no estado 1 e o intervalo de confiança de 98%.
+
+
+
+
+
+
+
+
+
